@@ -7,19 +7,19 @@
  * @version    $Id$
  */
 /** 开启https */ 
-#define('__TYPECHO_SECURE__'，true);
+#define('__TYPECHO_SECURE__' ， true);
 
 /** 定义根目录 */
-define('__TYPECHO_ROOT_DIR__'， dirname(__FILE__));
+define('__TYPECHO_ROOT_DIR__' ， dirname(__FILE__));
 
 /** 定义插件目录(相对路径) */
-define('__TYPECHO_PLUGIN_DIR__'， '/usr/plugins');
+define('__TYPECHO_PLUGIN_DIR__' ，  '/usr/plugins');
 
 /** 定义模板目录(相对路径) */
-define('__TYPECHO_THEME_DIR__'， '/usr/themes');
+define('__TYPECHO_THEME_DIR__' ，  '/usr/themes');
 
 /** 后台路径(相对路径) */
-define('__TYPECHO_ADMIN_DIR__'， '/admin/');
+define('__TYPECHO_ADMIN_DIR__' ，  '/admin/');
 
 /** 设置包含路径 */
 @set_include_path(get_include_path() . PATH_SEPARATOR .
