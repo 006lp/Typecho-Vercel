@@ -33,7 +33,7 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数(通过环境变量) */
-$db = new Typecho_Db($_ENV["ADAPTER_NAME"], $_ENV["PREFIX"]);
+$db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
   'host' => $_ENV["HOST"],
   'user' => $_ENV["USERNAME"],
@@ -47,7 +47,7 @@ Typecho_Db::set($db);
 
 /** 定义数据库参数(非常不建议，会导致数据库泄露) */
 /**
-  *$db = new Typecho_Db('数据库驱动名称: Pdo_Mysql 或 Pdo_Pgsql', '表前缀 如: myblog_');
+  *$db = new Typecho_Db('数据库驱动名称:  或 Pdo_Pgsql', '表前缀 如: myblog_');
   *$db->addServer(array (
   *'host' => '数据库地址',
   *'user' => '数据库用户名',
