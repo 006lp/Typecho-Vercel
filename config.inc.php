@@ -41,7 +41,7 @@ $db->addServer(array (
   'charset' => 'utf8mb4',
   'port' => $_ENV["PORT"],
   'database' => $_ENV["DATABASE"],
-  /**'engine' => $_ENV["ENGINE"],*/
+  'engine' => $_ENV["ENGINE"],
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
