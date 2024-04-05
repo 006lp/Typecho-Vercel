@@ -33,7 +33,7 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数(通过环境变量) */
-$db = new Typecho_Db('Pdo_Pgsql', 'typecho_');
+$db = new Typecho_Db($_ENV["HOST"], 'typecho_');
 $db->addServer(array (
   'host' => $_ENV["HOST"],
   'user' => $_ENV["USERNAME"],
