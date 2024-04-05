@@ -38,7 +38,7 @@ $db->addServer(array (
   'host' => $_ENV["HOST"],
   'user' => $_ENV["USERNAME"],
   'password' => $_ENV["PASSWORD"],
-  /**'charset' => $_ENV["CHARSET"],*/
+  'charset' => $_ENV["CHARSET"],
   'port' => $_ENV["PORT"],
   'database' => $_ENV["DATABASE"],
   /**'engine' => $_ENV["ENGINE"],*/
