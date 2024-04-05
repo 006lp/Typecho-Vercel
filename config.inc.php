@@ -38,17 +38,17 @@ $db->addServer(array (
   'host' => $_ENV["HOST"],
   'user' => $_ENV["USERNAME"],
   'password' => $_ENV["PASSWORD"],
-  'charset' => $_ENV["CHARSET"],
+  /**'charset' => $_ENV["CHARSET"],*/
   'port' => $_ENV["PORT"],
   'database' => $_ENV["DATABASE"],
-  'engine' => $_ENV["ENGINE"],
+  /**'engine' => $_ENV["ENGINE"],*/
   'sslVerify' => true
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
 /** 定义数据库参数(非常不建议,会导致数据库泄露) */
 /**
-  *$db = new Typecho_Db('数据库驱动名称:  或 Pdo_Pgsql', '表前缀 如: myblog_');
+  *$db = new Typecho_Db('数据库驱动名称: Pdo_Mysql或 Pdo_Pgsql', '表前缀 如: myblog_');
   *$db->addServer(array (
   *'host' => '数据库地址',
   *'user' => '数据库用户名',
