@@ -38,10 +38,11 @@ $db->addServer(array (
   'host' => $_ENV["HOST"],
   'user' => $_ENV["USERNAME"],
   'password' => $_ENV["PASSWORD"],
-  'charset' => 'utf8mb4',
+  'charset' => $_ENV["CHARSET"],
   'port' => $_ENV["PORT"],
   'database' => $_ENV["DATABASE"],
   'engine' => $_ENV["ENGINE"],
+  'sslVerify' => true
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
